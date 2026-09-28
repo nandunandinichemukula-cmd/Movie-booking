@@ -1,0 +1,22 @@
+*{box-sizing:border-box}
+:root{--red:#f22f55;--dark:#081a33;--muted:#667085;--bg:#f5f6fa}
+html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#172033}
+.topbar{height:64px;background:var(--dark);color:white;display:flex;align-items:center;padding:0 5%;gap:35px;position:sticky;top:0;z-index:10}
+.brand{font-size:21px;white-space:nowrap}.topbar nav{display:flex;gap:22px}.topbar nav a{color:#fff;text-decoration:none;font-size:14px}
+.search{margin-left:auto;width:240px;padding:10px 13px;border:0;border-radius:8px}
+.hero{margin:0 5%;min-height:330px;border-radius:0 0 16px 16px;background:linear-gradient(100deg,#061528,#16375b);color:white;display:flex;align-items:center;padding:55px 6%;overflow:hidden}
+.eyebrow{letter-spacing:2px;font-size:12px}.hero h1{font-size:45px;margin:10px 0}.hero h1 span{color:#ff4768}.hero p{color:#d7dfeb}.hero-btn,.primary{background:var(--red);color:white;border:0;border-radius:8px;padding:13px 20px;font-weight:bold;text-decoration:none;display:inline-block}
+.section{padding:32px 5%}.section-head{display:flex;align-items:center;justify-content:space-between}.section-head h2{margin:0 0 18px}.section-head span{color:var(--muted)}
+.movie-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.movie-card,.panel{background:white;border-radius:12px;padding:16px;box-shadow:0 4px 16px #00000012}
+.poster{height:270px;border-radius:9px;overflow:hidden;background:#ddd}.poster img{width:100%;height:100%;object-fit:cover}
+.movie-card h3{margin:13px 0 6px}.movie-card p{color:var(--muted);font-size:13px}.book-btn{width:100%;border:0;background:var(--red);color:white;padding:11px;border-radius:7px;font-weight:bold;cursor:pointer}
+.hidden{display:none!important}.booking-section{padding-top:15px}.steps{display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap}.steps span{background:#e7e9ee;padding:8px 14px;border-radius:20px;font-size:13px}.steps .active{background:#ffe1e7;color:#d91e43;font-weight:bold}
+.selected-movie{display:flex;gap:18px;margin-bottom:18px}.selected-movie img{width:100px;height:145px;object-fit:cover;border-radius:8px}.selected-movie p{color:var(--muted);line-height:1.5}
+.theatre-list{display:grid;gap:12px}.theatre{border:1px solid #e0e3e8;border-radius:9px;padding:15px}.theatre.selected{border:2px solid var(--red)}.theatre-title{font-weight:bold;margin-bottom:10px}.show-btn{margin:5px;padding:9px 14px;background:#fff;border:1px solid #bbb;border-radius:6px;cursor:pointer}.show-btn.selected{background:#ffe1e7;border-color:var(--red);color:#d91e43;font-weight:bold}
+.legend{display:flex;gap:18px;color:#555;font-size:13px;margin-bottom:15px}.legend .red{color:var(--red)}.legend .grey{color:#888}.screen{max-width:600px;margin:10px auto 25px;background:#dbe7fa;text-align:center;padding:8px;border-radius:50%}
+.seat-layout{max-width:650px;margin:auto;display:grid;grid-template-columns:repeat(10,1fr);gap:7px}.seat{height:30px;border:0;border-radius:5px;background:#e8eaee;cursor:pointer;font-size:11px}.seat.selected{background:var(--red);color:#fff}.seat.booked{background:#8d93a0;color:#fff;cursor:not-allowed}
+.summary-panel{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:30px}.customer-form input,.customer-form select{display:block;width:100%;padding:12px;margin:10px 0;border:1px solid #d5d8de;border-radius:7px}.primary{cursor:pointer;width:100%;margin-top:8px}
+.summary-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #eee}.total{font-size:20px;font-weight:bold}
+.modal{position:fixed;inset:0;background:#0009;display:flex;align-items:center;justify-content:center;padding:20px;z-index:30}.confirmation-card{background:white;width:min(480px,100%);padding:30px;border-radius:16px;text-align:center}.success-icon{width:65px;height:65px;background:#1dbb73;color:#fff;border-radius:50%;font-size:45px;line-height:65px;margin:auto}.ticket{margin:20px 0;padding:16px;text-align:left;border:1px dashed #aaa;border-radius:10px;background:#fafafa}.confirmation-card small{display:block;color:#777;margin-top:12px}
+@media(max-width:700px){.topbar{padding:0 3%;gap:10px}.topbar nav{display:none}.search{width:140px}.hero{margin:0 3%;padding:35px 6%}.hero h1{font-size:32px}.section{padding:25px 3%}.summary-panel{grid-template-columns:1fr}.seat-layout{gap:4px}.seat{height:27px;font-size:9px}.selected-movie{align-items:flex-start}}
